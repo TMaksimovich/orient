@@ -1,0 +1,30 @@
+footer {
+	padding: 0 60px;
+	.social-list {
+		grid-column: col-start 1/span 1;
+  }
+  .copyright {
+    grid-column: col-start 2/span 10;
+		justify-self: center;
+    font-weight: 700;
+    line-height: 17px;
+  }
+	.copyright {
+		font-size: 14px;
+  }
+}
+
+@media(max-width:991px){
+  // footer {
+  //   padding: 30px 15px;
+  //   .copyright {
+  //     grid-column: col-start 1/span 2;
+  //   }
+  // }
+}
+
+@media(max-width:1399px){
+  // footer .copyright {
+  //   grid-column: col-start 2/span 7;
+  // }
+}

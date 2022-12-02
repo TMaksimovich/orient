@@ -1,0 +1,28 @@
+.btn {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.095em;
+  text-transform: uppercase;
+  color: $font-color;
+  display: inline-block;
+  text-align: center;
+  background-color: $yellow;
+  border: 2px solid $yellow;
+  padding: 14px 55px;
+  transition: $transition;
+  &:hover{
+    background-color: transparent;
+  }
+  &:active{
+    background-color: transparent;
+  }
+  &--dark {
+    color: #fff;
+  }
+  &--small {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+}

@@ -1,0 +1,109 @@
+#wpadminbar + header {
+  padding-top: 40px;
+}
+header {
+	padding: 0 60px;
+	font-family: $font-family;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+// .toogle-menu-btn-box,
+// .menu-box--mobile {
+//   display: none;
+// }
+// .toogle-menu-btn {
+//   width: 20px;
+//   height: 1.8px;
+//   background-color: $font-color;
+//   display: block;
+//   cursor: pointer;
+//   position: relative;
+//   transition: transform 0.5s, top 0.2s;
+// }
+// .toogle-menu-btn--top {
+//   margin-bottom: 10px;
+//   &:before {
+//     content: '';
+//     position: absolute;
+//     top: 6px;
+//     left: 0;
+//     width: 20px;
+//     height: 1.8px;
+//     background-color: $font-color;
+//   }
+// }
+// .toogle-menu--active {
+// 	.toogle-menu-btn {
+// 		display: block;
+// 	}
+// 	.toogle-menu-btn--top {
+//     top: 5px;
+//     transform: rotate(-45deg);
+//     &:before {
+//       display: none;
+//     }
+// 	}
+// 	.toogle-menu-btn--bottom {
+// 		top: -7px;
+// 		transform: rotate(45deg);
+// 	}
+// }
+// .header-mobile-open {
+//   z-index: 10;
+// }
+// .header-mobile-open,
+// .menu-box--mobile-open {
+//   background-color: #C4C4C4;
+// }
+// .menu-box--mobile-open {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   position: fixed;
+//   width: 100%;
+//   height: calc(100vh - 57px);
+//   z-index: 50;
+//   top: 57px;
+//   right: 0;
+//   .menu-list {
+//     display: block;
+//     text-align: center;
+//     width: 100%;
+//   }
+//   .menu-item {
+//     margin-bottom: 50px;
+//     &:last-child {
+//       margin-bottom: 0;
+//     }
+//   }
+//   .menu-link {
+//     font-size: 26px;
+//     line-height: 32,47px;
+//   }
+//   .social-list {
+//     width: 100%;
+//     position: static;
+//     display: block;
+//     text-align: center;
+//     margin-bottom: 20px;
+//   }
+//   .social-item {
+//     display: inline-block;
+//     vertical-align: bottom;
+//     &:last-child {
+//       margin-right: 0;
+//     }
+//   }
+// }
+
+@media (max-width: 991px) {
+  
+}
+
+@media (max-width: 1399px) {
+  
+}

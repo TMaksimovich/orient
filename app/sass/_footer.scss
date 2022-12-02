@@ -1,30 +1,32 @@
 footer {
-	padding: 0 60px;
-	.social-list {
-		grid-column: col-start 1/span 1;
+	padding: 50px 40px;
+  background-color: $dark-blue;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+  a:hover {
+    color: #fff;
   }
-  .copyright {
-    grid-column: col-start 2/span 10;
-		justify-self: center;
-    font-weight: 700;
-    line-height: 17px;
-  }
-	.copyright {
-		font-size: 14px;
-  }
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.phone-column,
+.mail-column,
+.privacy-column {
+  text-align: center;
+}
+.copyright {
+  opacity: 0.7;
 }
 
 @media(max-width:991px){
   // footer {
   //   padding: 30px 15px;
-  //   .copyright {
-  //     grid-column: col-start 1/span 2;
-  //   }
   // }
 }
 
 @media(max-width:1399px){
-  // footer .copyright {
-  //   grid-column: col-start 2/span 7;
-  // }
 }

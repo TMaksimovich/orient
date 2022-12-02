@@ -1,0 +1,24 @@
+.page-privacy {
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 95px;
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $blue;
+      margin-top: 65px;
+      margin-bottom: 15px;
+    }
+    ol {
+      margin-top: 25px;
+      list-style: none;
+      padding-left: 0;
+    }
+    li > ul {
+      margin-left: 10px;
+    }
+  }
+}

@@ -21,9 +21,37 @@
     grid-area: footer;
   }
 }
-// .grid-header {
-//   height: 100%;
-// }
+.logo-column {
+  grid-column: col-start 1/span 2;
+}
+.nav-column {
+  grid-column: col-start 3/span 6;
+}
+.lang-column {
+  grid-column: col-start 9/span 1;
+}
+.contact-column {
+  grid-column: col-start 10/span 3;
+}
+.title-block,
+.content-box,
+.footer-content {
+  grid-column: col-start 1/span 12;
+}
+.column-half {
+  width: 50%;
+  flex-basis: 50%;
+}
+.column-third {
+  width: 33.3%;
+  flex-basis: 33.3%;
+}
+.column-fourth {
+  width: 25%;
+  flex-basis: 25%;
+}
+
+
 // .box {
 //   display: flex;
 // }

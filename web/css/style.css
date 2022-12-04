@@ -516,6 +516,14 @@ ul li::after {
   top: 12px;
 }
 
+@media (max-width: 1023px) {
+  .content-box {
+    padding: 0 10px;
+  }
+  .title-block {
+    padding: 20px 10px;
+  }
+}
 .grid {
   display: -ms-grid;
   display: grid;
@@ -571,6 +579,12 @@ ul li::after {
   grid-column: col-start 1/span 12;
 }
 
+.column-full {
+  width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
 .column-half {
   width: 50%;
   -ms-flex-preferred-size: 50%;
@@ -589,6 +603,34 @@ ul li::after {
       flex-basis: 25%;
 }
 
+@media (max-width: 1023px) {
+  .grid {
+    -ms-grid-columns: [main-start] ([col-start] minmax(140px, 1fr))[2] [main-end];
+    grid-template-columns: [main-start] repeat(2, [col-start] minmax(140px, 1fr)) [main-end];
+  }
+  .grid-page {
+    -ms-grid-rows: 72px minmax(calc(100vh - 72px), -webkit-max-content) 255px;
+    -ms-grid-rows: 72px minmax(calc(100vh - 72px), max-content) 255px;
+    grid-template-rows: 72px minmax(calc(100vh - 72px), -webkit-max-content) 255px;
+    grid-template-rows: 72px minmax(calc(100vh - 72px), max-content) 255px;
+  }
+  .column-xs-full {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .logo-column {
+    grid-column: col-start 1/span 1;
+  }
+  .lang-column {
+    grid-column: col-start 2/span 1;
+  }
+  .title-block,
+  .content-box,
+  .footer-content {
+    grid-column: col-start 1/span 2;
+  }
+}
 .btn {
   font-family: "OpenSans", sans-serif;
   font-weight: 600;
@@ -694,6 +736,22 @@ header {
   transition: all 500ms ease;
 }
 
+@media (max-width: 1023px) {
+  header {
+    padding: 20px 10px;
+  }
+  .logo,
+  .lang-list {
+    padding-bottom: 0px;
+  }
+  .logo img {
+    max-width: 101px;
+  }
+  .contact-column,
+  .nav-column {
+    display: none;
+  }
+}
 footer {
   padding: 70px 40px 40px;
   background-color: #050A1D;

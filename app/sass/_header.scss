@@ -141,8 +141,23 @@ header {
 //   }
 // }
 
-@media (max-width: 991px) {
-  
+@media (max-width: 1023px) {
+  header {
+    padding: 20px 10px;
+  }
+  .logo, 
+  .lang-list {
+    padding-bottom: 0px;
+  }
+  .logo {
+    img {
+      max-width: 101px;
+    }
+  }
+  .contact-column,
+  .nav-column {
+    display: none;
+  }
 }
 
 @media (max-width: 1399px) {

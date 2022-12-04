@@ -99,3 +99,12 @@ ul {
     }
   }
 }
+
+@media (max-width: 1023px) {
+  .content-box {
+    padding: 0 10px;
+  }
+  .title-block {
+    padding: 20px 10px;
+  }
+}

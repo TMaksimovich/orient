@@ -1,4 +1,24 @@
 // hamburger menu
+(function() {
+
+	let hamburger = {
+		nav: document.querySelector('.menu-box'),
+		navToggle: document.querySelector('.toogle-menu-btn-box'),
+
+		initialize() {
+			this.navToggle.addEventListener('click',
+        () => { this.toggle(); });
+		},
+
+		toggle() {
+			this.navToggle.classList.toggle('expanded');
+			this.nav.classList.toggle('expanded');
+		},
+	};
+
+	hamburger.initialize();
+
+}());
 // (function($) {
 //   $(".toogle-menu-btn-box").click(function() {
 //     $(this).toggleClass("toogle-menu--active");

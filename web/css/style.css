@@ -654,6 +654,13 @@ ul li::after {
     -ms-grid-columns: [main-start] ([col-start] minmax(140px, 1fr))[2] [main-end];
     grid-template-columns: [main-start] repeat(2, [col-start] minmax(140px, 1fr)) [main-end];
   }
+  .grid.grid-header {
+    -ms-grid-columns: [main-start] ([col-start] minmax(70px, 1fr))[3] [main-end];
+    grid-template-columns: [main-start] repeat(3, [col-start] minmax(70px, 1fr)) [main-end];
+    grid-auto-flow: row;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
   .grid-page {
     -ms-grid-rows: 72px minmax(calc(100vh - 72px), -webkit-max-content) 255px;
     -ms-grid-rows: 72px minmax(calc(100vh - 72px), max-content) 255px;
@@ -670,11 +677,20 @@ ul li::after {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
+  .logo-column,
+  .lang-column,
+  .nav-column {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
   .logo-column {
-    grid-column: col-start 1/span 1;
+    grid-column: col-start 1/span 2;
   }
   .lang-column {
-    grid-column: col-start 2/span 1;
+    grid-column: col-start 3/span 1;
+  }
+  .nav-column {
+    grid-column: col-start 3/span 1;
   }
   .title-block,
   .content-box,
@@ -798,9 +814,21 @@ header {
   .logo img {
     max-width: 101px;
   }
+  .lang-column {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .lang-link {
+    font-size: 18px;
+    line-height: 1.4;
+  }
   .contact-column,
-  .nav-column {
+  .nav-column .menu-box {
     display: none;
+  }
+  .nav-column {
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
 }
 footer {
@@ -988,11 +1016,11 @@ footer a:hover {
   padding-bottom: 10px;
 }
 
-.menu-item-has-children {
+.menu-item-has-children > a {
   position: relative;
   padding-right: 10px;
 }
-.menu-item-has-children::after {
+.menu-item-has-children > a::after {
   content: "";
   position: absolute;
   top: 7px;
@@ -1008,7 +1036,7 @@ footer a:hover {
   border-radius: 0;
   background-color: transparent;
 }
-.menu-item-has-children:hover::after {
+.menu-item-has-children:hover > a::after {
   border-color: #EFB500;
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
@@ -1018,6 +1046,96 @@ footer a:hover {
   display: block;
 }
 
+@media (max-width: 1023px) {
+  .toogle-menu-btn {
+    width: 24px;
+    height: 2px;
+    background-color: #252F5C;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: top 0.2s, -webkit-transform 0.5s;
+    transition: top 0.2s, -webkit-transform 0.5s;
+    -o-transition: transform 0.5s, top 0.2s;
+    transition: transform 0.5s, top 0.2s;
+    transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+  }
+  .toogle-menu-btn--top {
+    margin-bottom: 12px;
+  }
+  .toogle-menu-btn--top:before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #252F5C;
+  }
+  .menu-box.expanded {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #252F5C;
+    color: #fff;
+    z-index: 10;
+  }
+  .menu-box.expanded .menu-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .menu-box.expanded .menu-item {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 10px;
+  }
+  .menu-box.expanded .menu-item:hover a {
+    color: inherit;
+  }
+  .menu-box.expanded .menu-item-has-children > a::after {
+    border-color: #fff;
+    width: 7px;
+    height: 7px;
+    left: 120px;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+  .menu-box.expanded .menu-item-has-children a:hover + .sub-menu {
+    display: block;
+  }
+  .menu-box.expanded .menu-item-has-children a:hover:after {
+    -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    top: 10px;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+  .menu-box.expanded .sub-menu {
+    display: none;
+    position: static;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: auto;
+    padding: 5px 24px 0;
+    line-height: 1.6;
+  }
+  .toogle-menu--active .toogle-menu-btn {
+    display: block;
+  }
+}
 .front-page main {
   padding: 0;
 }

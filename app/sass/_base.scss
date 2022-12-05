@@ -101,10 +101,46 @@ ul {
 }
 
 @media (max-width: 1023px) {
+  body {
+    font-size: 14px;
+    line-height: 1.6;
+  }
   .content-box {
     padding: 0 10px;
   }
   .title-block {
-    padding: 20px 10px;
+    padding: 15px 10px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4,
+  h5,
+  h6  {
+    font-size: 16px;
+  }
+  ul {
+    li {
+      padding-left: 10px;
+      &:after {
+        width: 5px;
+        height: 5px;
+        top: 10px;
+      }
+    }
   }
 }

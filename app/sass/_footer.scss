@@ -56,10 +56,41 @@ footer {
   height: 18px;
 }
 
-@media(max-width:991px){
-  // footer {
-  //   padding: 30px 15px;
-  // }
+@media(max-width:1023px){
+  footer {
+    padding: 40px 10px 25px;
+  }
+  .footer-content {
+    flex-wrap: wrap;
+  }
+  .adress-column,
+  .phone-column,
+  .mail-column {
+    margin-bottom: 10px;
+  }
+  .phone-column,
+  .privacy-column,
+  .social-column {
+    text-align: left;
+  }
+  .mail-column {
+    text-align: right;
+  }
+  .social-column {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .social-list {
+    order: 2;
+  }
+  .social-item {
+    padding-left: 15px;
+}
+  .copyright {
+    order: 1;
+  }
 }
 
 @media(max-width:1399px){

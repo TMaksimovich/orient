@@ -52,7 +52,7 @@ header {
 
 @media (max-width: 1023px) {
   header {
-    padding: 20px 10px;
+    padding: 15px 20px;
   }
   .logo, 
   .lang-list {
@@ -60,12 +60,11 @@ header {
   }
   .logo {
     img {
-      max-width: 101px;
+      max-width: 125px;
     }
   }
   .lang-column {
     justify-self: end;
-    padding-right: 60px;
   }
   .lang-link {
     font-size: 18px;
@@ -79,6 +78,16 @@ header {
   }
 }
 
-@media (max-width: 1399px) {
-  
+@media (max-width: 767px) {
+  header {
+    padding: 20px 10px;
+  }
+  .logo {
+    img {
+      max-width: 101px;
+    }
+  }
+  .lang-column {
+    padding-right: 60px;
+  }
 }

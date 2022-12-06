@@ -101,17 +101,20 @@ ul {
 }
 
 @media (max-width: 1023px) {
+  .title-block {
+    padding: 15px 20px;
+    min-height: 224px;
+    align-items: center;
+  }
+  .content-box {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 767px) {
   body {
     font-size: 14px;
     line-height: 1.6;
-  }
-  .content-box {
-    padding: 0 10px;
-  }
-  .title-block {
-    padding: 15px 10px;
-    min-height: 116px;
-    align-items: center;
   }
   h1,
   h2,
@@ -134,6 +137,14 @@ ul {
   h5,
   h6  {
     font-size: 16px;
+  }
+  .content-box {
+    padding: 0 10px;
+  }
+  .title-block {
+    padding: 15px 10px;
+    min-height: 116px;
+    align-items: center;
   }
   ul {
     li {

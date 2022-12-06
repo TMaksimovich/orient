@@ -25,6 +25,21 @@
 
 @media (max-width: 1023px) {
   .page-privacy {
+    .content-box {
+      padding-bottom: 80px;
+      h2, 
+      h3, 
+      h4, 
+      h5, 
+      h6 {
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .page-privacy {
     h1 {
       font-size: 24px;
       margin: 10px 0;
@@ -38,7 +53,7 @@
       h6 {
         margin-top: 25px;
         margin-bottom: 10px;
-    }
+      }
     }
   }
 }

@@ -656,6 +656,10 @@ ul li::after {
       flex-basis: 25%;
 }
 
+.error-page .content-box {
+  grid-column: col-start 5/span 4;
+}
+
 @media (max-width: 1439px) {
   .grid {
     -ms-grid-columns: [main-start] ([col-start] minmax(auto, 1fr))[12] [main-end];
@@ -777,6 +781,9 @@ ul li::after {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
+  .error-page .content-box {
+    grid-column: col-start 2/span 4;
+  }
 }
 @media (max-width: 767px) {
   .grid {
@@ -788,10 +795,10 @@ ul li::after {
     grid-template-columns: [main-start] repeat(3, [col-start] minmax(70px, 1fr)) [main-end];
   }
   .grid-page {
-    -ms-grid-rows: 72px minmax(calc(100vh - 72px), -webkit-max-content) 255px;
-    -ms-grid-rows: 72px minmax(calc(100vh - 72px), max-content) 255px;
-    grid-template-rows: 72px minmax(calc(100vh - 72px), -webkit-max-content) 255px;
-    grid-template-rows: 72px minmax(calc(100vh - 72px), max-content) 255px;
+    -ms-grid-rows: 72px minmax(calc(100vh - 327px), -webkit-max-content) 255px;
+    -ms-grid-rows: 72px minmax(calc(100vh - 327px), max-content) 255px;
+    grid-template-rows: 72px minmax(calc(100vh - 327px), -webkit-max-content) 255px;
+    grid-template-rows: 72px minmax(calc(100vh - 327px), max-content) 255px;
   }
   .lang-column {
     grid-column: col-start 3/span 1;
@@ -814,12 +821,15 @@ ul li::after {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
+  .error-page .content-box {
+    grid-column: col-start 1/span 2;
+  }
 }
 .btn {
   font-family: "OpenSans", sans-serif;
   font-weight: 600;
   font-size: 14px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.095em;
   text-transform: uppercase;
   color: #333333;
@@ -827,7 +837,7 @@ ul li::after {
   text-align: center;
   background-color: #EFB500;
   border: 2px solid #EFB500;
-  padding: 14px 55px;
+  padding: 13px 50px;
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -1550,5 +1560,31 @@ footer a:hover {
   .page-privacy .content-box h6 {
     margin-top: 25px;
     margin-bottom: 10px;
+  }
+}
+.error-page .content-box {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.error-page .content-box h1 {
+  font-size: 64px;
+  line-height: 1.2;
+  color: #252F5C;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.error-page .content-box p {
+  color: #252F5C;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .error-page .content-box h1 {
+    font-size: 48px;
+  }
+  .error-page .content-box p {
+    margin-bottom: 30px;
   }
 }

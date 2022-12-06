@@ -2,7 +2,7 @@
   font-family: $font-family;
   font-weight: 600;
   font-size: 14px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.095em;
   text-transform: uppercase;
   color: $font-color;
@@ -10,7 +10,7 @@
   text-align: center;
   background-color: $yellow;
   border: 2px solid $yellow;
-  padding: 14px 55px;
+  padding: 13px 50px;
   transition: $transition;
   &:hover{
     background-color: transparent;

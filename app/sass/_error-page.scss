@@ -1,0 +1,30 @@
+.error-page {
+  .content-box {
+    text-align: center;
+    align-self: center;
+    h1 {
+      font-size: 64px;
+      line-height: 1.2;
+      color: $blue;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+    p {
+      color: $blue;
+      margin-bottom: 30px;
+    }
+  }
+} 
+
+@media (max-width: 767px) {
+  .error-page {
+    .content-box {
+      h1 {
+        font-size: 48px;
+      }
+      p {
+        margin-bottom: 30px;
+      }
+    }
+  } 
+}

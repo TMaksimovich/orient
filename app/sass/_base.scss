@@ -73,6 +73,8 @@ h6 {
   background-color: $blue;
   padding: 50px 40px;
   display: flex;
+  align-items: center;
+  min-height: 224px;
   h1 {
     color: $yellow;
     margin: 8px 0;
@@ -100,11 +102,9 @@ ul {
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1439px) {
   .title-block {
     padding: 15px 20px;
-    min-height: 224px;
-    align-items: center;
   }
   .content-box {
     padding: 0 20px;

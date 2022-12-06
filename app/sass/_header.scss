@@ -50,6 +50,50 @@ header {
   }
 }
 
+@media (max-width: 1439px) {
+
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  header {
+    &.grid-header {
+      padding: 0;
+    }
+    .menu-item,
+    .logo-column,
+    .lang-list {
+      padding-bottom: 5px;
+    }
+  }
+  .contact-column {
+    background-color: $blue;
+    justify-content: end;
+    align-self: start;
+    padding: 7px 20px;
+  }
+  .contact-phone, 
+  .contact-mail {
+    color: #fff;
+    padding-bottom: 0;
+  }
+  .contact-phone {
+    padding-right: 38px;
+  }
+  .logo-column {
+    img {
+      max-width: 98px;
+    }
+  }
+  .lang-column,
+  .logo-column {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .nav-column {
+    justify-self: start;
+  }
+}
+
 @media (max-width: 1023px) {
   header {
     padding: 15px 20px;

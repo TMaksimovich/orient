@@ -1,0 +1,43 @@
+.pagination {
+  padding: 70px 0 30px;
+  ul {
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+    padding: 0 4px;
+    color: rgba(51, 51, 51, 0.7);
+    &:after {
+      display: none;
+    }
+    a {
+      color: inherit;
+      &:hover {
+        color: $yellow;
+        opacity: 1;
+      }
+    }
+    span {
+      color: $yellow;
+    }
+  }
+  .arrow {
+    width: 5px;
+    height: 5px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.7);
+    border-right: 1px solid rgba(51, 51, 51, 0.7);
+    display: inline-block;
+    vertical-align: middle;
+    transition: $transition;
+    &:hover {
+      border-color: $yellow;
+      opacity: 1;
+    }
+  }
+  .arrow-next {
+    transform: rotate(-45deg);
+  }
+  .arrow-prev {
+    transform: rotate(135deg);
+  }
+}

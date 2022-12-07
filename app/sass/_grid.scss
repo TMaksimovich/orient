@@ -88,6 +88,11 @@
   grid-column: col-start 1/span 12;
   grid-row: auto;
 }
+.news-single-page {
+  .content-box {
+    grid-column: col-start 1/span 12;
+  }
+}
 
 @media (max-width: 1439px) {
   .grid {
@@ -221,6 +226,11 @@
   .pagination {
     grid-column: 1;
   }
+  .news-single-page {
+    .content-box {
+      grid-column: col-start 1/span 6;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -266,5 +276,8 @@
       width: 100%;
       flex-basis: 100%;
     }
+  }
+  .news-single-page .content-box {
+    grid-column: col-start 1/span 2;
   }
 }

@@ -41,3 +41,9 @@
     transform: rotate(135deg);
   }
 }
+
+@media (max-width: 767px) {
+  .pagination {
+    padding: 30px 0 10px;
+  }
+}

@@ -1,6 +1,33 @@
 .contacts-page {
   .title-block {
     min-height: 360px;
+    h1 {
+      width: 100%;
+      flex-basis: 100%;
+      margin-bottom: 40px;
+    }
+    .adress-column,
+    .phone-column,
+    .mail-column {
+      padding-right: 20px;
+    }
+    .adress-column {
+      width: 41.6%;
+      flex-basis: 41.6%;
+      color: #fff;
+      p {
+        width: 72%;
+      }
+    }
+    .phone-column,
+    .mail-column {
+      width: 25%;
+      flex-basis: 25%;
+      text-align: left;
+      a:hover {
+        color: #fff;
+      }
+    }
   }
   .title-block-content {
     display: flex;
@@ -8,31 +35,78 @@
     align-items: center;
     width: 100%;
   }
-  h1 {
-    width: 100%;
-    flex-basis: 100%;
-    margin-bottom: 40px;
-  }
-  .adress-column,
-  .phone-column,
-  .mail-column {
-    padding-right: 20px;
-  }
-  .adress-column {
-    width: 41.6%;
-    flex-basis: 41.6%;
-    color: #fff;
-    p {
-      width: 72%;
+}
+
+@media (max-width: 1439px) {
+  .contacts-page {
+    .title-block {
+      .adress-column p {
+        width: 100%;
+      }
+      .phone-column,
+      .mail-column {
+        text-align: right;
+      }
+      .mail-column {
+        padding-right: 0;
+      }
+    }
+    .title-block-content {
+      justify-content: space-between;
     }
   }
-  .phone-column,
-  .mail-column {
-    width: 25%;
-    flex-basis: 25%;
-    text-align: left;
-    a:hover {
-      color: #fff;
+}
+
+@media (max-width: 1023px) {
+  .contacts-page {
+    .title-block {
+      h1 {
+        margin-bottom: 20px;
+      }
+      .adress-column {
+        width: 100%;
+        flex-basis: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+        p {
+          width: 53%;
+        }
+      }
+      .phone-column,
+      .mail-column {
+        width: auto;
+        flex-basis: auto;
+      }
+      .mail-column {
+        padding-right: 50px;
+      }
+    }
+  } 
+}
+
+@media (max-width: 767px) {
+  .contacts-page {
+    .title-block {
+      min-height: 297px;
+      h1 {
+        margin-bottom: 20px;
+      }
+      .adress-column {
+        margin-bottom: 30px;
+        p {
+          width: 100%;
+        }
+      }
+      .phone-column,
+      .mail-column {
+        width: 100%;
+        flex-basis: 100%;
+        padding-right: 0;
+        text-align: left;
+      }
+    }
+    .title-block-content {
+      flex-direction: column;
     }
   }
 }

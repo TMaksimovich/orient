@@ -17,7 +17,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=91565148-b956-4647-a002-f26a9ec9e944&lang=ru_RU" type="text/javascript"></script>
   </head>
 
-  <body class="grid-page news-single-page">
+  <body class="grid-page contacts-page">
     
     <header class="grid grid-header">
       <div class="logo logo-column">
@@ -90,21 +90,59 @@
     <main class="grid">
       <div class="title-block">
         <div class="title-block-content">
-          <p class="news-date">10.06.2022</p>
-          <h1>Мы&nbsp;приняли участие в&nbsp;выставке &laquo;Мир Стекла&raquo;</h1>
+          <h1>Контакты</h1>
+          <div class="adress-column">
+            <p>ООО «ОриентИС технолоджи» <br>196128, г Санкт-Петербург, ул Варшавская, д. 5 к. 2 литера А, помещение 206А</p>
+          </div>
+          <div class="phone-column">
+            <a href="tel:+79219251924">+ 7 921 925 19 24</a>
+          </div>
+          <div class="mail-column">
+            <a href="mailto:info@orientistec.ru">info@orientistec.ru</a>
+          </div>
         </div>
       </div>
 
-      <div class="content-box">
-        <div class="content-column">
-          <div class="news-img">
-            <img src="img/news_1.jpeg" alt="Мы приняли участие в выставке “ Мир Стекла”">
-          </div>
-  
-          <p>Мы&nbsp;приняли участие в&nbsp;выставке &laquo;Мир Стекла&raquo;, проходившей в&nbsp;Москве 6-9 июня 2022&nbsp;года. Удалось встретиться с&nbsp;многими лояльными партнерами, показать образцы новой и&nbsp;уже хорошо зарекомендовавшей себя продуции&nbsp;&mdash; керамики, огнеупоров, формокомплектов, смазок, наплавочных порошков, лезвий ножниц, лерных сеток, бесшумных цепей и&nbsp;запасных частей стеклоформующей машины</p>
-        
-        </div>
+      <div class="map-box">
+        <div id="map" style="width: 100%; height: 442px"></div>
       </div>
+
+      <section class="form-wrapper">
+        <div class="form-content">
+          <h2>Свяжитесь с нами</h2>
+          <p>Если вас заинтересовала наша продукция или у&nbsp;вас остались вопросы, заполните форму обратной связи, и&nbsp;наш менеджер свяжется с&nbsp;вами.</p>
+        </div>
+
+        <div class="form-box">
+          <form action="" method="post">
+
+            <div class="group-fields">
+              <input type="text" id="firstName" placeholder="Ваше имя">
+              <label for="firstName">Ваше имя</label>
+            </div>
+
+            <div class="group-fields">
+              <input type="email" id="email" placeholder="Ваш Email">
+              <label for="email">Ваш Email</label>
+            </div>
+
+            <div class="group-fields">
+              <input type="tel" id="tel" placeholder="+7 (999) 999-99-99">
+              <label for="tel">+7 (999) 999-99-99</label>
+            </div>
+
+            <div class="group-fields">
+              <input type="text" id="message" placeholder="Сообщение">
+              <label for="message">Сообщение</label>
+            </div>
+
+            <input type="submit" value="Отправить" class="btn">
+
+            <p>Нажимая на&nbsp;кнопку &laquo;отправить&raquo;, вы&nbsp;соглашаетесь на&nbsp;обработку персональных данных в&nbsp;соответствии с <a href="/privacy-policy.html">Политикой конфиденциальности</a></p>
+
+          </form>
+        </div>  
+      </section>
     </main>
 
     <footer class="grid">

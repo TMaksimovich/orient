@@ -703,6 +703,11 @@ ul li::after {
   grid-column: col-start 1/span 12;
 }
 
+.map-box,
+.form-wrapper {
+  grid-column: col-start 1/span 12;
+}
+
 @media (max-width: 1439px) {
   .grid {
     -ms-grid-columns: [main-start] ([col-start] minmax(auto, 1fr))[12] [main-end];
@@ -2053,4 +2058,8 @@ footer a:hover {
   .pagination {
     padding: 30px 0 10px;
   }
+}
+ymaps[class$=ground-pane] {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(1);
 }

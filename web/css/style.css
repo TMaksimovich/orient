@@ -2063,3 +2063,49 @@ ymaps[class$=ground-pane] {
   -webkit-filter: grayscale(100%);
   filter: grayscale(1);
 }
+
+.contacts-page .title-block {
+  min-height: 360px;
+}
+.contacts-page .title-block-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.contacts-page h1 {
+  width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 40px;
+}
+.contacts-page .adress-column,
+.contacts-page .phone-column,
+.contacts-page .mail-column {
+  padding-right: 20px;
+}
+.contacts-page .adress-column {
+  width: 41.6%;
+  -ms-flex-preferred-size: 41.6%;
+      flex-basis: 41.6%;
+  color: #fff;
+}
+.contacts-page .adress-column p {
+  width: 72%;
+}
+.contacts-page .phone-column,
+.contacts-page .mail-column {
+  width: 25%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  text-align: left;
+}
+.contacts-page .phone-column a:hover,
+.contacts-page .mail-column a:hover {
+  color: #fff;
+}

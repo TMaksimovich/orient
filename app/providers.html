@@ -5,24 +5,47 @@
     //= html/_header.html
 
     <main class="grid">
-      <div class="title-block" style="background-image: url('img/providers_bg.jpg') ;">
-          <h1>Поставщики</h1>
+      <div class="title-block--svg">
+        <div class="playground-svg-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="playground-svg" viewBox="0 0 440 271" width="100%" height="232" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <filter id="filter" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feColorMatrix type="matrix" values="1 0 0 0 0 
+                1 0 0 0 0 
+                1 0 0 0 0
+                0 0 0 1 0" in="SourceGraphic" result="colormatrix">
+                </feColorMatrix>
+                <feComponentTransfer in="colormatrix" result="componentTransfer">
+                  <feFuncR type="table" tableValues="0.06 0.15 0.27"></feFuncR>
+                  <feFuncG type="table" tableValues="0.08 0.18 0.33"></feFuncG>
+                  <feFuncB type="table" tableValues="0.16 0.36 0.47"></feFuncB>
+                  <feFuncA type="table" tableValues="0 1"></feFuncA>
+                </feComponentTransfer>
+                <feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"></feBlend>
+              </filter>
+            </defs>
+            <g>
+              <image href="img/news_1.jpeg" x="0%" y="0%" width="100%" height="440" filter="url(#filter)" class="image image--filtered"></image>
+              <text x="0" y="145" class="title-svg">Поставщики</text>
+            </g>
+          </svg>
+        </div>
       </div>
 
       <div class="grid grid-half-column">
-        <div class="column-icon--vertical">
+        <div class="column-icon column-icon--vertical">
           <img src="img/refmon.svg" alt="REFMON">
           <h3>REFMON (Венгрия)</h3>
           <p>Один из&nbsp;самых амбициозных и&nbsp;динамично развивающихся производителей высокакачественной керамики для сталелитейной, стекольной и&nbsp;керамической отрасли. Компания была основана в&nbsp;1996 талантливыми венгерскими специалистами в&nbsp;области огнеупоров. На&nbsp;сегодняшний день качество керамики известно далеко за&nbsp;пределами Европы, а&nbsp;список клиентов составляют большинство мировых промышленных предприятий. Показатели стойкости к&nbsp;коррозии и&nbsp;теплостойкости являются одними из&nbsp;высочайших среди мировых производителей технической керамики.</p>
         </div>
 
-        <div class="column-icon--vertical">
+        <div class="column-icon column-icon--vertical">
           <img src="img/rath.svg" alt="RATH Group">
           <h3>RATH Group (Австрия)</h3>
           <p>Производитель алюмо-силикатных огнеупоров для различных отраслей промышленности. Штаб-квартира находится в&nbsp;Вене. Заводы компании сосредоточены в&nbsp;Австрии, Германии, Венгрии, США. Для предприятий металлургической, стекольной отрасли и&nbsp;керамической отрасли RATH поставляет спеченные формованные и&nbsp;неформованные огнеупорные изделия из&nbsp;таких материалов как шамот, муллит, силлиманит, корунд, циркон-муллит, циркон-силикат.</p>
         </div>
 
-        <div class="column-icon--vertical">
+        <div class="column-icon column-icon--vertical">
           <img src="img/hartmann.svg" alt="Hartmann&Bender">
           <h3>Hartmann&Bender (Германия)</h3>
           <p>Ведущий мировой производитель запасных частей и&nbsp;навесного оборудования. Компания была основана в&nbsp;1897 году и&nbsp;в&nbsp;настоящее время является семейной компанией, управляемой в&nbsp;четвертом поколении. Компания производит весь спектр стандартного навесного оборудования&nbsp;ИС машины, а&nbsp;также специальные части, изготавливаемые по&nbsp;эксклюзивному дизайну.</p>

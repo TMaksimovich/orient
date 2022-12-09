@@ -1,0 +1,8 @@
+File from: [app/img/keramika_icon_1.jpg]
+
+File to: [web/img/keramika_icon_1.jpg]
+
+Compression algorithm: [mozjpeg]
+
+Description: Error: Command failed: /Users/tmaksimovich/Documents/work/orient/node_modules/mozjpeg/vendor/cjpeg -quality 75 -outfile web/img/keramika_icon_1.jpg app/img/keramika_icon_1.jpg
+Unrecognized input file format --- perhaps you need -targa

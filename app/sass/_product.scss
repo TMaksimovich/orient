@@ -1,0 +1,13 @@
+.product-page {
+  .content-box {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-page {
+    .content-box {
+      padding-top: 40px;
+    }
+  }
+}

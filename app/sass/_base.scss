@@ -131,6 +131,9 @@ ul {
 }
 
 .playground-svg-wrapper {
+  h1 {
+    display: none;
+  }
   .image--filtered {
     height: auto;
   }

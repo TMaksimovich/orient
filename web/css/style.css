@@ -554,6 +554,9 @@ ul li::after {
       align-self: end;
 }
 
+.playground-svg-wrapper h1 {
+  display: none;
+}
 .playground-svg-wrapper .image--filtered {
   height: auto;
 }

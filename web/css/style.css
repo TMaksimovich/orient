@@ -533,14 +533,8 @@ ul li::after {
 .grid-half-column {
   padding: 80px 40px 60px;
 }
-.grid-half-column .column-icon--vertical {
+.grid-half-column .column-icon {
   padding-right: 80px;
-}
-
-.column-icon h3 {
-  color: #252F5C;
-  font-size: 32px;
-  margin-bottom: 15px;
 }
 
 .column-icon--vertical {
@@ -552,6 +546,34 @@ ul li::after {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+}
+.column-icon--vertical h3 {
+  color: #252F5C;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.column-icon--aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.column-icon--aside .column-icon-picture,
+.column-icon--aside img {
+  width: 71px;
+}
+.column-icon--aside .column-icon-desc {
+  padding-left: 43px;
+}
+.column-icon--aside h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #252F5C;
+}
+.column-icon--aside li {
+  margin-bottom: 5px;
 }
 
 .playground-svg-wrapper h1 {
@@ -605,7 +627,7 @@ ul li::after {
   .grid-half-column {
     padding: 80px 20px 20px;
   }
-  .grid-half-column .column-icon--vertical {
+  .grid-half-column .column-icon {
     padding-right: 0;
   }
   .playground-svg-wrapper .title-svg {
@@ -641,6 +663,21 @@ ul li::after {
   }
   .column-img img {
     height: 100%;
+  }
+  .column-icon--aside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .column-icon--aside .column-icon-desc {
+    padding-left: 0;
+  }
+  .column-icon--aside img {
+    width: 60px;
+  }
+  .column-icon--aside li {
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 767px) {
@@ -691,10 +728,10 @@ ul li::after {
   .grid-half-column {
     padding: 50px 10px 20px;
   }
-  .column-icon h3 {
+  .column-icon--vertical h3 {
     font-size: 24px;
   }
-  .column-icon img {
+  .column-icon--vertical img {
     max-width: 121px;
   }
   .playground-svg-wrapper svg {
@@ -728,13 +765,13 @@ ul li::after {
   grid-template-rows: auto;
   grid-row-gap: 70px;
 }
-.grid-half-column .column-icon--vertical {
+.grid-half-column .column-icon {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: column;
-  grid-column: auto/span 6;
   grid-row: auto;
+  grid-column: auto/span 6;
 }
 
 .grid-third-column {
@@ -942,6 +979,11 @@ ul li::after {
     -ms-flex-preferred-size: 66.6%;
         flex-basis: 66.6%;
   }
+  .column-md-7 {
+    width: 58.3%;
+    -ms-flex-preferred-size: 58.3%;
+        flex-basis: 58.3%;
+  }
   .column-md-full {
     width: 100%;
     -ms-flex-preferred-size: 100%;
@@ -964,7 +1006,7 @@ ul li::after {
   .grid-half-column .column-icon--vertical {
     grid-column: col-start 1/span 7;
   }
-  .grid-half-column .column-icon--vertical {
+  .grid-half-column .column-icon {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -1119,6 +1161,9 @@ ul li::after {
   .grid-half-column .column-icon--vertical {
     grid-column: col-start 1/span 4;
   }
+  .grid-half-column .column-icon--aside {
+    grid-column: auto/span 3;
+  }
   .grid-sm-half-column,
   .content-box.grid-sm-half-column {
     grid-column: col-start 1/span 6;
@@ -1150,7 +1195,7 @@ ul li::after {
       -ms-grid-column-span: 2;
   }
   }
-  .grid-sm-half-column > .column-icon--vertical, .content-box.grid-sm-half-column > .column-icon--vertical {
+  .grid-sm-half-column > .column-icon, .content-box.grid-sm-half-column > .column-icon {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -1234,7 +1279,7 @@ ul li::after {
   .form-box,
   .form-box form,
   .grid-half-column,
-  .grid-half-column .column-icon--vertical {
+  .grid-half-column .column-icon {
     grid-column: col-start 1/span 2;
   }
   .form-wrapper,
@@ -2687,9 +2732,19 @@ input.btn {
 .product-page .content-box {
   padding-top: 60px;
 }
+.product-page li {
+  margin-bottom: 5px;
+}
+.product-page .grid-half-column {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
 
 @media (max-width: 767px) {
-  .product-page .content-box {
-    padding-top: 40px;
+  .product-page .title-svg {
+    font-size: 32px;
+  }
+  .product-page li {
+    margin-bottom: 10px;
   }
 }

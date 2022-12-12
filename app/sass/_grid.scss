@@ -8,10 +8,10 @@
   grid-template-areas: "column column";
   grid-template-rows: auto;
   grid-row-gap: 70px;
-  .column-icon--vertical {
+  .column-icon {
     grid-area: column;
-    grid-column: auto/span 6;
     grid-row: auto;
+    grid-column: auto/span 6;
   }
 }
 .grid-third-column {
@@ -171,6 +171,10 @@
     width: 66.6%;
     flex-basis: 66.6%;
   }
+  .column-md-7 {
+    width: 58.3%;
+    flex-basis: 58.3%;
+  }
   .column-md-full {
     width: 100%;
     flex-basis: 100%;
@@ -324,6 +328,11 @@
       grid-column: col-start 1/span 4;
     }
   }
+  .grid-half-column {
+    .column-icon--aside {
+      grid-column: auto/span 3;
+    }
+  }
   .grid-sm-half-column,
   .content-box.grid-sm-half-column {
     grid-column: col-start 1/span 6;
@@ -390,7 +399,7 @@
   .form-box,
   .form-box form,
   .grid-half-column,
-  .grid-half-column .column-icon--vertical  {
+  .grid-half-column .column-icon  {
     grid-column: col-start 1/span 2;
   }
   .form-wrapper,

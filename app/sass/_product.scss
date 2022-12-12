@@ -2,12 +2,22 @@
   .content-box {
     padding-top: 60px;
   }
+  li {
+    margin-bottom: 5px;
+  }
+  .grid-half-column {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
 }
 
 @media (max-width: 767px) {
   .product-page {
-    .content-box {
-      padding-top: 40px;
+    .title-svg {
+      font-size: 32px;
+    }
+    li {
+      margin-bottom: 10px;
     }
   }
 }

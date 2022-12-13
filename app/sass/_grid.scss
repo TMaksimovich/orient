@@ -128,7 +128,11 @@
   }
 }
 .map-box,
-.form-wrapper {
+.form-wrapper,
+.counter-wrapper,
+.about-wrapper,
+.advantage-wrapper,
+.product-wrapper {
   grid-column: col-start 1/span 12;
 }
 .form-wrapper {
@@ -161,6 +165,24 @@
     grid-row: 3;
   }
 }
+.about-wrapper {
+  .info-column {
+    grid-column: col-start 1/span 6;
+  }
+  .img-column {
+    grid-column: col-start 8/span 4;
+  }
+}
+.counter-column,
+.product-column {
+  grid-column: auto/span 4;
+}
+.product-wrapper {
+  .grid-third-column {
+    grid-row-gap: 25px;
+  }
+}
+
 
 
 @media (max-width: 1439px) {

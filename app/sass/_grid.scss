@@ -132,7 +132,10 @@
 .counter-wrapper,
 .about-wrapper,
 .advantage-wrapper,
-.product-wrapper {
+.product-wrapper,
+.news-wrapper,
+.providers-wrapper,
+.contacts-wrapper {
   grid-column: col-start 1/span 12;
 }
 .form-wrapper {
@@ -140,7 +143,8 @@
   grid-column-gap: 20px;
   grid-template-columns: [main-start] repeat(12, [col-start] minmax(80px, 1fr)) [main-end];
 }
-.form-content {
+.form-content,
+.contacts-column {
   grid-column: col-start 1/span 5;
 }
 .form-box {
@@ -150,6 +154,12 @@
   grid-template-columns: [main-start] repeat(7, [col-start] minmax(auto, 1fr)) [main-end];
   form {
     grid-column: col-start 2/span 5;
+  }
+}
+.contacts-wrapper {
+  column-gap: 0;
+  .map-box {
+    grid-column: col-start 6/span 7;
   }
 }
 .column-icon--vertical {
@@ -180,6 +190,14 @@
 .product-wrapper {
   .grid-third-column {
     grid-row-gap: 25px;
+  }
+}
+.providers-wrapper {
+  .providers-img {
+    display: grid;
+  }
+  img {
+    grid-column: auto/span 4;
   }
 }
 
@@ -309,11 +327,23 @@
   .form-box,
   .form-box form,
   .title-block--svg,
-  .grid-half-column {
+  .grid-half-column,
+  .about-wrapper,
+  .product-wrapper,
+  .product-wrapper .grid,
+  .advantage-wrapper,
+  .counter-wrapper,
+  .providers-wrapper,
+  .news-wrapper,
+  .contacts-wrapper,
+  .contacts-column,
+  .contacts-wrapper .map-box {
     grid-column: col-start 1/span 6;
   }
   .form-content,
-  .product-page .content-box {
+  .product-page .content-box,
+  .about-wrapper .info-column,
+  .about-wrapper .img-column {
     grid-column: col-start 1/span 4;
   }
   .content-box {
@@ -393,6 +423,13 @@
       grid-column: col-start 1/span 6;
     }
   }
+  .counter-column,
+  .providers-wrapper img {
+    grid-column: auto/span 2;
+  }
+  .product-column {
+    grid-column: auto/span 3;
+  }
 }
 
 @media (max-width: 767px) {
@@ -416,7 +453,15 @@
   .footer-content,
   .title-block--svg,
   .product-page .content-box,
-  .services-page .content-box {
+  .services-page .content-box,
+  .about-wrapper,
+  .about-wrapper .info-column,
+  .about-wrapper .img-column,
+  .counter-wrapper,
+  .counter-column, 
+  .product-column,
+  .advantage-wrapper,
+  .product-wrapper {
     grid-column: col-start 1/span 2;
   }
   .column-xs-full {
@@ -449,7 +494,14 @@
   .form-box,
   .form-box form,
   .grid-half-column,
-  .grid-half-column .column-icon  {
+  .grid-half-column .column-icon,
+  .product-wrapper .grid,
+  .providers-wrapper, 
+  .contacts-wrapper,
+  .providers-wrapper img,
+  .news-wrapper,
+  .contacts-column,
+  .contacts-wrapper .map-box   {
     grid-column: col-start 1/span 2;
   }
   .form-wrapper,
@@ -468,5 +520,11 @@
   }
   .grid-xs-half-column {
     grid-template-areas: "column column";
+  }
+  .product-wrapper {
+    .grid {
+      grid-template-areas: "column";
+      grid-row-gap: 16px;
+    }
   }
 }

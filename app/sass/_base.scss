@@ -90,6 +90,15 @@ h6 {
     margin: 8px 0;
   }
 }
+.yellow-wrapper {
+  background-color: $yellow;
+  padding: 70px 40px;
+  h1,
+  h2,
+  h3 {
+    color: $blue;
+  }
+}
 
 ul {
   margin: 0;
@@ -191,6 +200,10 @@ ul {
   .title-block {
     padding: 15px 20px;
   }
+  .yellow-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .content-box {
     padding: 0 20px;
   }
@@ -226,6 +239,10 @@ ul {
       font-size: 24px;
       transform: translate(11px, 0);
     }
+  }
+  .yellow-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .grid-half-column {
     padding: 60px 20px 20px;
@@ -286,6 +303,9 @@ ul {
     padding: 15px 10px;
     min-height: 116px;
     align-items: center;
+  }
+  .yellow-wrapper {
+    padding: 50px 10px;
   }
   ul {
     li {

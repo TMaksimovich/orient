@@ -1,18 +1,67 @@
 .counter-wrapper {
   padding: 60px 40px;
   text-align: center;
+  &.animate-active .left .progress {
+    z-index: 1;
+    animation: left 0.5s linear both;
+  }
+  &.animate-active .right .progress {
+    animation: right 0.5s linear both;
+    animation-delay: 0.5s;
+  }
+  &.animate-active .circle .right {
+    transform: rotate(180deg);
+    z-index: 3;
+  }
 }
 #counter-value {
+  z-index: 10;
+  position: absolute;
+  margin: auto;
+  top: 6px;
+  left: 0;
+  right: 0;
+}
+.circular {
   width: 190px;
   height: 190px;
-  border-radius: 50%;
-  border: 2px solid $yellow;
   font-size: 48px;
   line-height: 180px;
   color: $blue;
   font-weight: 700;
+  position: relative;
   margin: auto;
+  .inner {
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    height: 184px;
+    width: 184px;
+    margin: -92px 0 0 -92px;
+    background: #F8F8F8;
+    border-radius: 100%;
+  }
+  .bars {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #F8F8F8;
+    border-radius: 100%;
+    clip: rect(0px, 190px, 190px, 95px);
+    top: 0;
+    left: 0;
+  }
+  .progress {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    clip: rect(0px, 95px, 190px, 0px);
+    background: $yellow;
+  }
 }
+
 .counter-column {
   &:first-of-type {
     #counter-value:after {
@@ -33,10 +82,24 @@
 }
 @media (max-width: 1023px) { 
   #counter-value {
+    top: 2px;
+  }
+  .circular {
     flex-basis: 154px;
     width: 154px;
     height: 154px;
     line-height: 148px;
+    .inner {
+      height: 148px;
+      width: 148px;
+      margin: -74px 0 0 -74px;
+    }
+    .bars {
+      clip: rect(0px, 154px, 154px, 77px);
+    }
+    .progress {
+      clip: rect(0px, 77px, 154px, 0px);
+    }
   }
   .counter-column {
     p {
@@ -56,18 +119,29 @@
     align-items: center;
     margin-bottom: 45px;
     p {
-      width: calc(100% - 103px);
+      width: calc(100% - 104px);
       font-size: 16px;
       text-align: left;
       padding-left: 24px;
       margin-top: 0;
     }
   }
-  #counter-value {
-    flex-basis: 103px;
-    width: 103px;
-    height: 103px;
+  .circular {
+    flex-basis: 104px;
+    width: 104px;
+    height: 104px;
     font-size: 30px;
     line-height: 97px;
+    .inner {
+      height: 98px;
+      width: 98px;
+      margin: -49px 0 0 -49px;
+    }
+    .bars {
+      clip: rect(0px, 104px, 104px, 52px);
+    }
+    .progress {
+      clip: rect(0px, 52px, 104px, 0px);
+    }
   }
 }

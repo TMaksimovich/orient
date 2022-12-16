@@ -1,8 +1,14 @@
-@keyframes slideDown {
-	from {
-    
-	}
-	to {
-    
-	}
+@keyframes left {
+  100% {
+      transform: rotate(180deg);
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+   transform: rotate(180deg);
+  }
 }

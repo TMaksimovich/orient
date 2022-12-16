@@ -126,6 +126,12 @@
   .content-box {
     grid-column: col-start 1/span 12;
   }
+  .content-column {
+    grid-column: col-start 1/span 6;
+  }
+  .news-more-column {
+    grid-column: col-start 8/span 5;
+  }
 }
 .map-box,
 .form-wrapper,
@@ -337,7 +343,9 @@
   .news-wrapper,
   .contacts-wrapper,
   .contacts-column,
-  .contacts-wrapper .map-box {
+  .contacts-wrapper .map-box,
+  .news-single-page .content-column,
+  .news-single-page .news-more-column {
     grid-column: col-start 1/span 6;
   }
   .form-content,
@@ -461,7 +469,9 @@
   .counter-column, 
   .product-column,
   .advantage-wrapper,
-  .product-wrapper {
+  .product-wrapper,
+  .news-single-page .content-column,
+  .news-single-page .news-more-column {
     grid-column: col-start 1/span 2;
   }
   .column-xs-full {

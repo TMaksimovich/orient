@@ -3240,6 +3240,9 @@ form p {
   position: relative;
   margin-bottom: 15px;
 }
+.group-fields a {
+  color: rgba(51, 51, 51, 0.5);
+}
 
 input {
   width: 100%;
@@ -3344,6 +3347,11 @@ input.btn {
   width: auto;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+input:not([type=radio]):not([type=checkbox]) {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 @media (max-width: 1439px) {

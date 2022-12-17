@@ -370,6 +370,12 @@
     .contacts-column {
       padding: 30px 10px;
     }
+    .adress,
+    .phone,
+    .mail {
+      width: 100%;
+      flex-basis: 100%;
+    }
     h2 {
       margin-bottom: 0;
     }

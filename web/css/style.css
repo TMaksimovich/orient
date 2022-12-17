@@ -2314,8 +2314,6 @@ footer a:hover {
   background-repeat: no-repeat;
   background-position: 0 0;
   height: 271px;
-  -webkit-filter: url("../img/filter.svg#filter");
-          filter: url("../img/filter.svg#filter");
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -2328,8 +2326,8 @@ footer a:hover {
   position: relative;
 }
 .product-image--bg:hover {
-  -webkit-filter: none;
-          filter: none;
+  -webkit-filter: none !important;
+          filter: none !important;
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;

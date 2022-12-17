@@ -83,13 +83,13 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   height: 271px;
-  filter: url("../img/filter.svg#filter");
+  //filter: url("../img/filter.svg#filter");
   transition: $transition;
   display: flex;
   align-items: flex-end;
   position: relative;
   &:hover {
-    filter: none;
+    filter: none !important;
     transition: $transition;
     &:after {
       content: '';

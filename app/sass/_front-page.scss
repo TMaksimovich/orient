@@ -128,6 +128,12 @@
     padding-right: 0;
     padding-bottom: 20px;
   }
+  .news-column {
+    &:first-of-type,
+    &:nth-child(2) {
+      margin-top: 10px;
+    }
+  }
 }
 .contacts-wrapper {
   padding-top: 60px;
@@ -213,8 +219,9 @@
 @media (max-width: 1023px) { 
   .front-page {
     .title-block {
-      min-height: 966px;
+      min-height: calc(100vh - 72px);
       padding-bottom: 50px;
+      justify-content: center;
       h1 {
         width: 100%;
         margin-top: 25px;
@@ -292,7 +299,6 @@
     .title-block {
       padding-bottom: 35px;
       padding-top: 55px;
-      min-height: calc(100vh - 60px);
       img {
         width: 140px;
       } 
@@ -313,6 +319,10 @@
     h2 {
       font-size: 30px;
       line-height: 1.2;
+    }
+    .form-wrapper {
+      margin-top: 0;
+      padding-top: 55px;
     }
   }
   .about-wrapper {
@@ -367,6 +377,7 @@
     }
   }
   .contacts-wrapper {
+    padding-bottom: 0;
     .contacts-column {
       padding: 30px 10px;
     }

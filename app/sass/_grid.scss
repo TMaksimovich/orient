@@ -207,7 +207,26 @@
   }
 }
 
-
+@media (min-width: 1860px) {
+  .grid-xl-fourth-column {
+    grid-template-areas: "column column column column";
+    .column-icon {
+      grid-column: auto/span 3;
+    }
+  }
+  .contacts-column {
+    grid-column: col-start 1/span 4;
+  }
+  .contacts-wrapper .map-box {
+    grid-column: col-start 5/span 8;
+  }
+  .form-content {
+    grid-column: col-start 1/span 6;
+  }
+  .form-box {
+    grid-column: col-start 7/span 5;
+  }
+}
 
 @media (max-width: 1439px) {
   .grid,

@@ -157,6 +157,22 @@
   }
 }
 
+@media (min-width: 1860px) {
+  .news-column {
+    &:first-of-type {
+      .news-img img {
+        height: 436px;
+      }
+    } 
+    .news-date {
+      margin-bottom: 0;
+    }
+  }
+  .news-img img {
+    height: 256px;
+  }
+}
+
 @media (max-width: 1439px) {
   .news-title {
     font-size: 20px;

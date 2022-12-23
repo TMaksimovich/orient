@@ -89,6 +89,24 @@ input:not([type="radio"]):not([type="checkbox"]) {
   border-radius: 0;
 }
 
+@media (min-width: 1860px) {
+  .form-content {
+    p {
+      width: 80%;
+    }
+  }
+  .form-wrapper {
+    padding-bottom: 104px;
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+  .form-box {
+    padding-bottom: 35px;
+    padding-top: 50px;
+  }
+}
+
 @media (max-width: 1439px) {
   .form-wrapper {
     padding: 90px 20px;

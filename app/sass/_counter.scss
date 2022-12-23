@@ -75,6 +75,36 @@
   }
 }
 
+@media (min-width: 1860px) { 
+  .counter-wrapper {
+    padding-top: 115px;
+    padding-bottom: 115px;
+  }
+  .circular {
+    flex-basis: 290px;
+    width: 290px;
+    height: 290px;
+    line-height: 286px;
+    font-size: 64px;
+    .inner {
+      height: 286px;
+      width: 286px;
+      margin: -143px 0 0 -143px;
+    }
+    .bars {
+      clip: rect(0px, 290px, 290px, 145px);
+    }
+    .progress {
+      clip: rect(0px, 145px, 290px, 0px);
+    }
+  }
+  .counter-column p {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-top: 40px;
+  }
+}
+
 @media (max-width: 1439px) { 
   .counter-wrapper {
     padding: 60px 20px;

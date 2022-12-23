@@ -661,6 +661,21 @@ ul li::after {
   margin-bottom: 0;
 }
 
+@media (min-width: 1860px) {
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 64px;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+  .yellow-wrapper {
+    padding-top: 90px;
+  }
+}
 @media (max-width: 1439px) {
   .title-block {
     padding: 15px 20px;
@@ -1075,6 +1090,41 @@ ul li::after {
   grid-column: auto/span 4;
 }
 
+@media (min-width: 1860px) {
+  .grid-xl-fourth-column {
+        grid-template-areas: "column column column column";
+  }
+  .grid-xl-fourth-column .column-icon {
+    grid-column: auto/span 3;
+  }
+  .contacts-column {
+    grid-column: col-start 1/span 4;
+  }
+  .contacts-wrapper .map-box {
+    grid-column: col-start 5/span 8;
+  }
+  .form-content {
+    grid-column: col-start 1/span 6;
+  }
+  .form-box {
+    grid-column: col-start 7/span 5;
+  }
+  .grid-xl-fourth-column > .column-icon {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+  }
+  .grid-xl-fourth-column > .column {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+  }
+  .grid-xl-fourth-column > .column {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+  }
+}
 @media (max-width: 1439px) {
   .grid,
   .form-wrapper {
@@ -1336,6 +1386,14 @@ ul li::after {
     grid-area: column;
     grid-column: auto/span 3;
     grid-row: auto;
+  }
+  @media (min-width: 1860px) {
+  .grid-xl-fourth-column > .column,
+  .grid-xl-fourth-column > .column {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 4;
+  }
   }
   @media (max-width: 1439px) {
   .grid-sm-half-column .column,
@@ -2409,6 +2467,68 @@ footer a:hover {
   color: #fff;
 }
 
+@media (min-width: 1860px) {
+  .front-page .title-block img {
+    width: 290px;
+  }
+  .front-page h2 {
+    font-size: 64px;
+  }
+  .about-wrapper .yellow-text {
+    margin-top: 45px;
+    font-size: 20px;
+  }
+  .about-wrapper img {
+    max-height: none;
+  }
+  .advantage-wrapper {
+    padding-top: 75px;
+    padding-bottom: 35px;
+  }
+  .advantage-wrapper h2 {
+    margin-bottom: 65px;
+  }
+  .column-icon--aside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .column-icon--aside .column-icon-desc {
+    padding-left: 0;
+  }
+  .column-icon--aside h3 {
+    font-size: 24px;
+    margin-right: 20px;
+  }
+  .product-image--bg {
+    height: 370px;
+  }
+  .product-column p {
+    bottom: 55px;
+  }
+  .product-wrapper {
+    padding-bottom: 115px;
+  }
+  .providers-wrapper img {
+    max-width: 182px;
+  }
+  .news-wrapper {
+    padding-bottom: 90px;
+  }
+  .news-wrapper h2 {
+    margin-bottom: 15px;
+  }
+  .news-wrapper .btn {
+    margin-top: 10px;
+  }
+  .contacts-wrapper .contacts-column {
+    padding-top: 75px;
+  }
+  .contacts-wrapper #map {
+    height: 579px !important;
+  }
+}
 @media (max-width: 1439px) {
   .front-page .title-block {
     min-height: calc(100vh - 88px);
@@ -2918,6 +3038,17 @@ footer a:hover {
   line-height: 1.5;
 }
 
+@media (min-width: 1860px) {
+  .news-column:first-of-type .news-img img {
+    height: 436px;
+  }
+  .news-column .news-date {
+    margin-bottom: 0;
+  }
+  .news-img img {
+    height: 256px;
+  }
+}
 @media (max-width: 1439px) {
   .news-title {
     font-size: 20px;
@@ -3379,6 +3510,14 @@ input:not([type=radio]):not([type=checkbox]) {
   border-radius: 0;
 }
 
+@media (min-width: 1860px) {
+  .form-content p {
+    width: 80%;
+  }
+  .form-wrapper h2 {
+    margin-bottom: 10px;
+  }
+}
 @media (max-width: 1439px) {
   .form-wrapper {
     padding: 90px 20px;
@@ -3585,6 +3724,36 @@ input:not([type=radio]):not([type=checkbox]) {
   margin-top: 30px;
 }
 
+@media (min-width: 1860px) {
+  .counter-wrapper {
+    padding-top: 115px;
+    padding-bottom: 115px;
+  }
+  .circular {
+    -ms-flex-preferred-size: 290px;
+        flex-basis: 290px;
+    width: 290px;
+    height: 290px;
+    line-height: 286px;
+    font-size: 64px;
+  }
+  .circular .inner {
+    height: 286px;
+    width: 286px;
+    margin: -143px 0 0 -143px;
+  }
+  .circular .bars {
+    clip: rect(0px, 290px, 290px, 145px);
+  }
+  .circular .progress {
+    clip: rect(0px, 145px, 290px, 0px);
+  }
+  .counter-column p {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-top: 40px;
+  }
+}
 @media (max-width: 1439px) {
   .counter-wrapper {
     padding: 60px 20px;

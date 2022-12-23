@@ -195,6 +195,21 @@ ul {
   }
 }
 
+@media (min-width: 1860px) { 
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 64px;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+  .yellow-wrapper {
+    padding-top: 90px;
+  }
+}
 
 @media (max-width: 1439px) {
   .title-block {

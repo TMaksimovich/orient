@@ -1119,6 +1119,12 @@ ul li::after {
     -ms-flex-preferred-size: 41.6%;
         flex-basis: 41.6%;
   }
+  .news-single-page .content-column {
+    grid-column: col-start 1/span 5;
+  }
+  .news-single-page .news-more-column {
+    grid-column: col-start 7/span 5;
+  }
   .grid-xl-fourth-column > .column-icon {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -3085,6 +3091,35 @@ footer a:hover {
   .news-img img {
     height: 256px;
   }
+  .news-single-page .title-block {
+    min-height: 360px;
+  }
+  .news-single-page .news-more-column {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 80px;
+  }
+  .news-single-page .news-more-column h3 {
+    margin-top: 20px;
+  }
+  .news-single-page .news-more-column .news-date {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .news-single-page .news-more-column .news-title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: 5px;
+  }
+  .news-single-page .news-more-column .news-desc {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .news-single-page .content-box {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
 }
 @media (max-width: 1439px) {
   .news-title {
@@ -3337,6 +3372,14 @@ ymaps[class$=ground-pane] {
   width: 100%;
 }
 
+@media (min-width: 1860px) {
+  .contacts-page #map {
+    height: 465px !important;
+  }
+  .contacts-page .form-wrapper {
+    padding-top: 130px;
+  }
+}
 @media (max-width: 1439px) {
   .contacts-page .title-block .adress-column p {
     width: 100%;

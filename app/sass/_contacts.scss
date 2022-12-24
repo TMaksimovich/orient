@@ -37,6 +37,17 @@
   }
 }
 
+@media (min-width: 1860px) {
+  .contacts-page {
+    #map {
+      height: 465px !important;
+    }
+    .form-wrapper {
+      padding-top: 130px;
+    }
+  }
+}
+
 @media (max-width: 1439px) {
   .contacts-page {
     .title-block {

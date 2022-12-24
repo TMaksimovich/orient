@@ -179,6 +179,35 @@
   .news-img img {
     height: 256px;
   }
+  .news-single-page {
+    .title-block {
+      min-height: 360px;
+    }
+    .news-more-column {
+      padding-left: 70px;
+      padding-right: 70px;
+      padding-bottom: 80px;
+      h3 {
+        margin-top: 20px;
+      }
+      .news-date {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      .news-title {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-top: 5px;
+      }
+      .news-desc {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    }
+    .content-box {
+      align-items: start;
+    }
+  }
 }
 
 @media (max-width: 1439px) {

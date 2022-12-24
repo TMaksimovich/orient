@@ -237,6 +237,14 @@
     width: 41.6%;
     flex-basis: 41.6%;
   }
+  .news-single-page {
+    .content-column {
+      grid-column: col-start 1/span 5;
+    }
+    .news-more-column {
+      grid-column: col-start 7/span 5;
+    }
+  }
 }
 
 @media (max-width: 1439px) {

@@ -8,7 +8,7 @@ for(let i = 0; i < countName.length; i++){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-	const scrollItems = document.querySelectorAll('.counter-wrapper');
+	const scrollItems = document.querySelectorAll('.counter-column');
 
 	const scrollAnimation = () => {
 		let windowCenter = (window.innerHeight / 2) + window.scrollY;

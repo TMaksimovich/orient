@@ -1,17 +1,19 @@
 .counter-wrapper {
   padding: 60px 40px;
   text-align: center;
-  &.animate-active .left .progress {
-    z-index: 1;
-    animation: left 0.5s linear both;
-  }
-  &.animate-active .right .progress {
-    animation: right 0.5s linear both;
-    animation-delay: 0.5s;
-  }
-  &.animate-active .circle .right {
-    transform: rotate(180deg);
-    z-index: 3;
+  .counter-column{
+    &.animate-active .left .progress {
+      z-index: 1;
+      animation: left 0.5s linear both;
+    }
+    &.animate-active .right .progress {
+      animation: right 0.5s linear both;
+      animation-delay: 0.5s;
+    }
+    &.animate-active .circle .right {
+      transform: rotate(180deg);
+      z-index: 3;
+    }
   }
 }
 #counter-value {

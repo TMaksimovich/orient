@@ -3774,18 +3774,18 @@ input:not([type=radio]):not([type=checkbox]) {
   padding: 60px 40px;
   text-align: center;
 }
-.counter-wrapper.animate-active .left .progress {
+.counter-wrapper .counter-column.animate-active .left .progress {
   z-index: 1;
   -webkit-animation: left 0.5s linear both;
           animation: left 0.5s linear both;
 }
-.counter-wrapper.animate-active .right .progress {
+.counter-wrapper .counter-column.animate-active .right .progress {
   -webkit-animation: right 0.5s linear both;
           animation: right 0.5s linear both;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
-.counter-wrapper.animate-active .circle .right {
+.counter-wrapper .counter-column.animate-active .circle .right {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);

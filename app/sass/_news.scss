@@ -158,6 +158,14 @@
 }
 
 @media (min-width: 1860px) {
+  .news-page {
+    .news-grid {
+      padding-top: 60px;
+    }
+    .news-desc {
+      margin-bottom: 0;
+    }
+  }
   .news-column {
     &:first-of-type {
       .news-img img {

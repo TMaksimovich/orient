@@ -3,3 +3,11 @@
     transform: translateY(57px);
   }
 }
+
+@media (min-width: 1860px) { 
+  .providers-page {
+    .form-wrapper {
+      padding-top: 55px;
+    }
+  }
+}

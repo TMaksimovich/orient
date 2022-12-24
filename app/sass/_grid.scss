@@ -210,8 +210,15 @@
 @media (min-width: 1860px) {
   .grid-xl-fourth-column {
     grid-template-areas: "column column column column";
-    .column-icon {
+    .column-icon,
+    .column {
       grid-column: auto/span 3;
+    }
+  }
+  .grid-xl-third-column {
+    grid-template-areas: "column column column";
+    .column-icon {
+      grid-column: auto/span 4;
     }
   }
   .contacts-column {
@@ -225,6 +232,10 @@
   }
   .form-box {
     grid-column: col-start 7/span 5;
+  }
+  .column-xl-5 {
+    width: 41.6%;
+    flex-basis: 41.6%;
   }
 }
 

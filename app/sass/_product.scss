@@ -11,6 +11,17 @@
   }
 }
 
+@media (min-width: 1860px) {
+  .product-page {
+    .content-box {
+      padding-top: 80px;
+    }
+    .form-wrapper {
+      padding-top: 120px;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .product-page {
     .title-svg {

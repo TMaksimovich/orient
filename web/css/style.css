@@ -1467,6 +1467,9 @@ ul li::after {
   .product-column {
     grid-column: auto/span 3;
   }
+  .product-page .content-box.grid-xs-half-column {
+    grid-row-gap: 20px;
+  }
   .grid-sm-half-column > .column-icon, .content-box.grid-sm-half-column > .column-icon {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -1592,6 +1595,10 @@ ul li::after {
   .grid-xs-half-column .column,
   .content-box.grid-xs-half-column .column {
     grid-column: auto/span 1;
+  }
+  .product-page .content-box.grid-xs-half-column,
+  .services-page .content-box.grid-xs-half-column {
+    grid-row-gap: 16px;
   }
   .grid-xs-half-column {
         grid-template-areas: "column column";
@@ -1777,6 +1784,7 @@ header {
   }
   .logo-column img {
     max-width: 98px;
+    width: 100%;
   }
   .lang-column,
   .logo-column {
@@ -1798,6 +1806,7 @@ header {
   }
   .logo img {
     max-width: 125px;
+    width: 100%;
   }
   .lang-column {
     -ms-grid-column-align: end;
@@ -2232,7 +2241,7 @@ footer a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 15px 20px;
+    padding: 20px 20px 15px;
   }
   .menu-box .logo-column {
     width: 55%;
@@ -2292,7 +2301,7 @@ footer a:hover {
     padding: 10px;
   }
   .menu-box .menu-header {
-    padding: 30px 10px 25px;
+    padding: 22px 10px 30px;
   }
   .menu-box .contact-column {
     padding: 0 10px 30px;
@@ -3448,6 +3457,9 @@ ymaps[class$=ground-pane] {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .contacts-page .form-wrapper {
+    margin-top: 0;
+  }
 }
 .form-wrapper {
   padding: 95px 40px 80px;
@@ -3681,6 +3693,9 @@ input:not([type=radio]):not([type=checkbox]) {
   .product-page li {
     margin-bottom: 10px;
   }
+  .product-page .title-block--svg + .content-box {
+    padding-top: 35px;
+  }
 }
 .providers-page .image--filtered {
   -webkit-transform: translateY(57px);
@@ -3752,9 +3767,9 @@ input:not([type=radio]):not([type=checkbox]) {
             justify-content: space-between;
   }
   .services-page .grid-fourth-column .column {
-    width: calc(25% - 20px);
-    -ms-flex-preferred-size: calc(25% - 20px);
-        flex-basis: calc(25% - 20px);
+    width: calc(25% - 15px);
+    -ms-flex-preferred-size: calc(25% - 15px);
+        flex-basis: calc(25% - 15px);
   }
 }
 @media (max-width: 767px) {

@@ -476,6 +476,9 @@
   .product-column {
     grid-column: auto/span 3;
   }
+  .product-page .content-box.grid-xs-half-column {
+    grid-row-gap: 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -565,6 +568,10 @@
     .column {
       grid-column: auto/span 1;
     }
+  }
+  .product-page .content-box.grid-xs-half-column,
+  .services-page .content-box.grid-xs-half-column {
+    grid-row-gap: 16px;
   }
   .grid-xs-half-column {
     grid-template-areas: "column column";

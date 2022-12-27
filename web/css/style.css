@@ -3670,7 +3670,7 @@ input:not([type=radio]):not([type=checkbox]) {
 .product-page .content-box {
   padding-top: 60px;
 }
-.product-page li {
+.product-page main li {
   margin-bottom: 15px;
 }
 .product-page .grid-half-column {

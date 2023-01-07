@@ -647,12 +647,17 @@ ul li::after {
           flex-direction: column;
 }
 .column-img .img-box {
-  height: auto;
   overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
 }
 .column-img img {
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }

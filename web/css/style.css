@@ -664,6 +664,7 @@ ul li::after {
 .column-img h3 {
   margin-top: 10px;
   margin-bottom: 0;
+  font-size: 20px;
 }
 
 @media (min-width: 1860px) {
@@ -687,7 +688,6 @@ ul li::after {
     max-width: 160px;
   }
   .column-img h3 {
-    font-size: 24px;
     color: #252F5C;
   }
   .title-block {
@@ -721,9 +721,6 @@ ul li::after {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
-  }
-  .column-img h3 {
-    font-size: 20px;
   }
 }
 @media (max-width: 1023px) {

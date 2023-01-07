@@ -197,6 +197,7 @@ ul {
   h3 {
     margin-top: 10px;
     margin-bottom: 0;
+    font-size: 20px;
   }
 }
 
@@ -226,7 +227,6 @@ ul {
   } 
   .column-img {
     h3 {
-      font-size: 24px;
       color: $blue;
     }
   }
@@ -261,11 +261,6 @@ ul {
   .column-icon--vertical {
     img {
       align-self: start;
-    }
-  }
-  .column-img {
-    h3 {
-      font-size: 20px;
     }
   }
 }

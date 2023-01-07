@@ -3274,31 +3274,31 @@ footer a:hover {
     padding-left: 15px;
   }
 }
-.pagination {
+nav.pagination {
   padding: 70px 0 30px;
 }
-.pagination ul {
+nav.pagination ul {
   text-align: center;
 }
-.pagination li {
+nav.pagination li {
   display: inline-block;
   padding: 0 4px;
   color: rgba(51, 51, 51, 0.7);
 }
-.pagination li:after {
+nav.pagination li:after {
   display: none;
 }
-.pagination li a {
+nav.pagination li a {
   color: inherit;
 }
-.pagination li a:hover {
+nav.pagination li a:hover {
   color: #EFB500;
   opacity: 1;
 }
-.pagination li span {
+nav.pagination li span {
   color: #EFB500;
 }
-.pagination .arrow {
+nav.pagination .arrow {
   width: 5px;
   height: 5px;
   border-bottom: 1px solid rgba(51, 51, 51, 0.7);
@@ -3309,28 +3309,28 @@ footer a:hover {
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-.pagination .arrow:hover {
+nav.pagination .arrow:hover {
   border-color: #EFB500;
   opacity: 1;
 }
-.pagination .arrow-next {
+nav.pagination .arrow-next {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.pagination .arrow-prev {
+nav.pagination .arrow-prev {
   -webkit-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
           transform: rotate(135deg);
 }
 
 @media (min-width: 1860px) {
-  .pagination {
+  nav.pagination {
     padding-top: 110px;
   }
 }
 @media (max-width: 767px) {
-  .pagination {
+  nav.pagination {
     padding: 30px 0 10px;
   }
 }

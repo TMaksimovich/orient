@@ -158,7 +158,8 @@
   display: grid;
   grid-column-gap: 20px;
   grid-template-columns: [main-start] repeat(7, [col-start] minmax(auto, 1fr)) [main-end];
-  form {
+  form,
+  .wpcf7 {
     grid-column: col-start 2/span 5;
   }
 }
@@ -276,7 +277,8 @@
   }
   .form-box {
     grid-template-columns: [main-start] repeat(7, [col-start] minmax(auto, 1fr)) [main-end];
-    form {
+    form,
+    .wpcf7 {
       grid-column: col-start 1/span 7;
     }
   }
@@ -370,6 +372,7 @@
   .form-wrapper,
   .form-box,
   .form-box form,
+  .form-box .wpcf7,
   .title-block--svg,
   .grid-half-column,
   .about-wrapper,
@@ -544,6 +547,7 @@
   .form-content,
   .form-box,
   .form-box form,
+  .form-box .wpcf7,
   .grid-half-column,
   .grid-half-column .column-icon,
   .product-wrapper .grid,

@@ -1032,7 +1032,8 @@ ul li::after {
   -ms-grid-columns: [main-start] ([col-start] minmax(auto, 1fr))[7] [main-end];
   grid-template-columns: [main-start] repeat(7, [col-start] minmax(auto, 1fr)) [main-end];
 }
-.form-box form {
+.form-box form,
+.form-box .wpcf7 {
   grid-column: col-start 2/span 5;
 }
 
@@ -1192,7 +1193,8 @@ ul li::after {
     -ms-grid-columns: [main-start] ([col-start] minmax(auto, 1fr))[7] [main-end];
     grid-template-columns: [main-start] repeat(7, [col-start] minmax(auto, 1fr)) [main-end];
   }
-  .form-box form {
+  .form-box form,
+  .form-box .wpcf7 {
     grid-column: col-start 1/span 7;
   }
   .column-icon--vertical {
@@ -1325,6 +1327,7 @@ ul li::after {
   .form-wrapper,
   .form-box,
   .form-box form,
+  .form-box .wpcf7,
   .title-block--svg,
   .grid-half-column,
   .about-wrapper,
@@ -1569,6 +1572,7 @@ ul li::after {
   .form-content,
   .form-box,
   .form-box form,
+  .form-box .wpcf7,
   .grid-half-column,
   .grid-half-column .column-icon,
   .product-wrapper .grid,

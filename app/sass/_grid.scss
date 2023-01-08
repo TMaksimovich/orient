@@ -207,6 +207,9 @@
     grid-column: auto/span 4;
   }
 }
+.product-page .grid-fourth-column {
+  grid-row-gap: 55px;
+}
 
 @media (min-width: 1860px) {
   .grid-xl-fourth-column {

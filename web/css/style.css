@@ -1091,6 +1091,10 @@ ul li::after {
   grid-column: auto/span 4;
 }
 
+.product-page .grid-fourth-column {
+  grid-row-gap: 55px;
+}
+
 @media (min-width: 1860px) {
   .grid-xl-fourth-column {
         grid-template-areas: "column column column column";
@@ -2058,6 +2062,11 @@ footer a:hover {
   color: inherit;
 }
 
+@media (min-width: 1440px) {
+  .sub-menu {
+    top: 30px;
+  }
+}
 @media (min-width: 1024px) {
   .menu-header {
     display: none;
@@ -2072,7 +2081,7 @@ footer a:hover {
     width: 209px;
     padding: 18px 24px;
     position: absolute;
-    top: 30px;
+    top: 23px;
     left: 10px;
     z-index: 100;
     display: none;

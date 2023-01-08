@@ -26,7 +26,11 @@
     color: inherit;
   }
 }
-
+@media (min-width: 1440px) {
+  .sub-menu {
+    top: 30px;
+  }
+}
 @media (min-width: 1024px) {
   .menu-header {
     display: none;
@@ -42,7 +46,7 @@
     width: 209px;
     padding: 18px 24px;
     position: absolute;
-    top: 30px;
+    top: 23px;
     left: 10px;
     z-index: 100;
     display: none;

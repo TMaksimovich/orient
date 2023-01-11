@@ -2168,6 +2168,9 @@ footer a:hover {
     -o-transition: left 0.5s ease;
     transition: left 0.5s ease;
   }
+  .menu-box .lang-link:hover {
+    color: #fff;
+  }
   .menu-box .menu-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

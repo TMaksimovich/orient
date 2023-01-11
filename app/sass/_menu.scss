@@ -127,6 +127,9 @@
     z-index: 300;
     overflow-y: auto;
     transition: left 0.5s ease;
+    .lang-link:hover {
+      color: #fff;
+    }
     .menu-list {
       flex-direction: column;
       align-items: flex-start;

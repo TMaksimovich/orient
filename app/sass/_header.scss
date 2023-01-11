@@ -23,12 +23,12 @@ header {
   &::after {
     display: none;
   }
-}
-.lang-link {
-  transition: $transition;
-  &:hover {
-    color: $blue;
+  a {
     transition: $transition;
+    &:hover {
+      color: $blue;
+      transition: $transition;
+    }
   }
 }
 .contact-column {
@@ -108,7 +108,7 @@ header {
   .lang-column {
     justify-self: end;
   }
-  .lang-link {
+  .lang-item a {
     font-size: 18px;
     line-height: 1.4;
   }

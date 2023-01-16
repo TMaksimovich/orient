@@ -198,6 +198,7 @@ ul {
     margin-top: 10px;
     margin-bottom: 0;
     font-size: 20px;
+    color: $blue;
   }
 }
 
@@ -263,6 +264,11 @@ ul {
       align-self: start;
     }
   }
+  .column-img {
+    h3 {
+      font-size: 16px;
+    }
+  } 
 }
 @media (max-width: 1023px) {
   .playground-svg-wrapper {

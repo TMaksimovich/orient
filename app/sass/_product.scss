@@ -9,6 +9,16 @@
     padding-top: 50px;
     padding-bottom: 40px;
   }
+  .column-product-img {
+    img {
+      max-width: 100%;
+    }
+  }
+  .gallery-block-title {
+    .grid {
+      padding-bottom: 50px;
+    }
+  }
 }
 
 @media (min-width: 1860px) {

@@ -176,7 +176,13 @@ ul {
     transform: translate(11px, 0);
   }
 }
-
+.img-horizont {
+  .column-img {
+    .img-box {
+      padding-bottom: 70%;
+    }
+  }
+}
 .column-img {
   display: flex;
   flex-direction: column;

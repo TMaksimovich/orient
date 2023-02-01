@@ -141,7 +141,8 @@
 .product-wrapper,
 .news-wrapper,
 .providers-wrapper,
-.contacts-wrapper {
+.contacts-wrapper,
+.gallery-block-title h2 {
   grid-column: col-start 1/span 12;
 }
 .form-wrapper {
@@ -150,8 +151,12 @@
   grid-template-columns: [main-start] repeat(12, [col-start] minmax(80px, 1fr)) [main-end];
 }
 .form-content,
-.contacts-column {
+.contacts-column,
+.column-product-content {
   grid-column: col-start 1/span 5;
+}
+.column-product-img {
+  grid-column: col-start 8/span 4;
 }
 .form-box {
   grid-column: col-start 6/span 7;
@@ -398,13 +403,17 @@
   .contacts-column,
   .contacts-wrapper .map-box,
   .news-single-page .content-column,
-  .news-single-page .news-more-column {
+  .news-single-page .news-more-column,
+  .product-page .content-box,
+  .gallery-block-title h2,
+  .gallery-block-title .grid {
     grid-column: col-start 1/span 6;
   }
   .form-content,
-  .product-page .content-box,
   .about-wrapper .info-column,
-  .about-wrapper .img-column {
+  .about-wrapper .img-column,
+  .column-product-content,
+  .column-product-img {
     grid-column: col-start 1/span 4;
   }
   .content-box {
@@ -538,7 +547,11 @@
   .advantage-wrapper,
   .product-wrapper,
   .news-single-page .content-column,
-  .news-single-page .news-more-column {
+  .news-single-page .news-more-column,
+  .column-product-content,
+  .column-product-img,
+  .gallery-block-title h2,
+  .gallery-block-title .grid {
     grid-column: col-start 1/span 2;
   }
   .column-xs-full {
